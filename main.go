@@ -61,7 +61,6 @@ func handleRequest() {
 
 	myRouter.HandleFunc("/article/{id}", returnSingleArticle)
 	log.Fatal(http.ListenAndServe(":8080", myRouter))
-	//myRouter.ListenAndServe(":8080", nil)
 }
 
 func main() {
